@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/aimpractice/static/css/main.de65dc68.chunk.css",
+    "main.js": "/aimpractice/static/js/main.5115bc35.chunk.js",
+    "main.js.map": "/aimpractice/static/js/main.5115bc35.chunk.js.map",
+    "runtime~main.js": "/aimpractice/static/js/runtime~main.17ae833d.js",
+    "runtime~main.js.map": "/aimpractice/static/js/runtime~main.17ae833d.js.map",
+    "static/js/2.e09f9078.chunk.js": "/aimpractice/static/js/2.e09f9078.chunk.js",
+    "static/js/2.e09f9078.chunk.js.map": "/aimpractice/static/js/2.e09f9078.chunk.js.map",
+    "index.html": "/aimpractice/index.html",
+    "precache-manifest.47efc7ba3be4f966c7224888cddaa5b7.js": "/aimpractice/precache-manifest.47efc7ba3be4f966c7224888cddaa5b7.js",
+    "service-worker.js": "/aimpractice/service-worker.js",
+    "static/css/main.de65dc68.chunk.css.map": "/aimpractice/static/css/main.de65dc68.chunk.css.map",
+    "static/media/TargetList.css": "/aimpractice/static/media/crosshair.2d4fe112.gif",
+    "static/media/terrorist.png": "/aimpractice/static/media/terrorist.f2fe9ce0.png"
+  }
+}
