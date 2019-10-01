@@ -59,4 +59,21 @@ function aa(x,d,i){
 console.log(aa(2,1,1)(3,5).k) // output is "asdasd" ofcourse
 
 
+//factory function (similar to a classs(you can associate/stick/link variables to objects))
+function aa(){
+
+const ss = "asdasd";
+
+return{
+  hh: function(){
+   console.log(ss);
+  }
+}
+}
+
+let dd = aa();
+
+dd.hh();
+
+
 //https://drive.google.com/file/d/16x1ovZcp796yof1rIf0dqLe0cQ83YCfD/view?usp=sharing
