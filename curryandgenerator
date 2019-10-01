@@ -41,5 +41,12 @@ let soso = hh.next();
 console.log(popo)
 
 
+// this is currying
+function func1() {console.log ('Hey Medium.')};
+function firstClassfunc1 (argsFunc) // function as an argument 
+{return argsFunc()}; //function as a return value
+function firstClassfunc2  ()  {return func1};
+firstClassfunc1 (firstClassfunc2());
+
 
 //https://drive.google.com/file/d/16x1ovZcp796yof1rIf0dqLe0cQ83YCfD/view?usp=sharing
