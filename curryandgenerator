@@ -77,3 +77,28 @@ dd.hh();
 
 
 //https://drive.google.com/file/d/16x1ovZcp796yof1rIf0dqLe0cQ83YCfD/view?usp=sharing
+
+
+
+
+A curried function is really useful when using the common patterns in functional programming. As a super quick example... suppose you have an array of numbers:
+const nums = [1, 2, 3]
+
+And the curried function: const add = x => y => x + y
+
+You can then do...
+const newNums = nums.map(add(2))
+
+Now you have a new array of numbers that has been incremented by 2. You leveraged an existing function (add), without needing to wrap it in another function to provide the argument '2'.
+
+This example may seem contrived, but the concept works well in more complex situations as well.
+
+A more obvious example might be partially applying a function where only one argument differs for a number of use cases as a way of composing new functions by gradually adding specificity...
+
+// pseudo code
+const requester = method => user => fetch(user, method)
+const syncRequest = requester('sync')
+
+We now have a sync request function we can use on any user...
+const syncUser1 = syncRequest(user1)
+const syncUser2 = suncRequest(user2)
