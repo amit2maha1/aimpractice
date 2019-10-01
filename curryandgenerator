@@ -1,0 +1,45 @@
+//https://drive.google.com/file/d/16x1ovZcp796yof1rIf0dqLe0cQ83YCfD/view?usp=sharing
+
+function *aa(){
+
+  console.log("do something beffore the next yield")
+  yield 1;
+
+  console.log("asdasd")
+  yield 2;
+}
+
+var a = aa();
+
+console.log(a.next().value);
+
+console.log(a.next().value);
+
+
+let bb = function(x){
+  return function(y){
+        return function *jj(){
+
+      console.log("inside of curry" );
+      yield x+y;
+      console.log("deeper into the cury");
+      yield "curry2";
+    }
+
+  }
+}
+
+let ji = bb(7);
+let uu = ji(5);
+let hh = uu();
+
+let opop = hh.next();
+let popo = hh.next();
+let soso = hh.next();
+
+
+console.log(popo)
+
+
+
+//https://drive.google.com/file/d/16x1ovZcp796yof1rIf0dqLe0cQ83YCfD/view?usp=sharing
