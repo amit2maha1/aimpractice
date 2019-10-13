@@ -102,3 +102,28 @@ const syncRequest = requester('sync')
 We now have a sync request function we can use on any user...
 const syncUser1 = syncRequest(user1)
 const syncUser2 = suncRequest(user2)
+
+//ARRAY REDUCE, remember accumulator and iterator
+
+var aa = ["jj", "kk", "ll" ,"kk","ll" ,"kk","kk"];
+
+
+var dd = aa.reduce((accumulator,iterator)=>{
+
+
+      accumulator[iterator] =  accumulator[iterator] || [0];
+
+accumulator[iterator][0]++ ;
+
+  return accumulator;
+},{}
+
+);
+
+var obji = Object.keys(dd);
+
+for(hj of obji){
+  console.log(dd[hj])
+}
+
+console.log(Object.keys(dd));
